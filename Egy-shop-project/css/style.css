@@ -1,0 +1,537 @@
+@import url('../css/fonts.css');
+
+/*Resst*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Doppio One";
+}
+
+:root{
+    --white:#FFF;
+}
+/*Start Header*/
+.main-header{
+    background: #1B6392;
+}
+
+.main-header .container{
+    min-height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ul-nav-bar{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.li-nav-bar a{
+    text-decoration: none; 
+    color: #C0C0C0;
+    font-family: "Doppio One";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.active:hover{
+    font-weight: 700;
+    color: #fff;
+}
+
+.menu{
+    border: 0;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+
+.menu svg{
+    width: 48px;
+    height: 48px;
+}
+
+@media screen and (max-width: 750px) {
+    nav{
+      display: none;
+    }
+
+    .menu{
+        display: block;
+    }
+}
+/*End Header*/
+
+/*Start Hero Section*/
+.hero-section{
+    padding: 69px;
+    background-image: url("../imgs/hero-bk.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+    min-height: calc(100vh - 120px);
+}
+
+.hero-section .row{
+    justify-content: space-between;
+}
+
+.hero-item{
+    max-width: 592px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hero-item h1{
+    color: #191C1F;
+    font-family: "Doppio One";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.hero-item p{
+    color: #191C1F;
+    font-family: "Doppio One";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 40px;
+    padding-bottom: 64px;
+}
+
+.links{
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+.first-main-link{
+    display: inline-block;
+    text-decoration: none;
+    min-width: 284px;
+    padding: 16px 24px;
+    color:#FFF;
+    text-align: center;
+    font-family: "Doppio One";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    border-radius: 4px;
+    border: 1px solid #FA8232;
+    background: #FA8232;
+    height: 56px;
+    line-height: 18px;
+    flex-grow: 1;
+}
+
+.second-main-link{
+    flex-grow: 1;
+    display: inline-block;
+    text-decoration: none;
+    min-width: 284px;
+    padding: 16px 24px;
+    color:#FA8232;
+    text-align: center;
+    font-family: "Doppio One";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    border-radius: 4px;
+    border: 1px solid #FA8232;
+    height: 56px;
+    line-height: 18px;
+}
+
+.first-main-link:hover{
+    transition: all linear 0.2s;
+    background-color: rgb(250, 250, 250,0.3);
+    color: #FF9D02;
+}
+
+.second-main-link:hover{
+    transition: all linear 0.2s;
+    background-color: #FA8232;
+    color: #fff;
+}
+
+.col-img{
+    display: flex;
+    justify-content: end;
+}
+
+
+.col-img img{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+    .hero-section .row .col-6 , .hero-section .row .col-4{
+      width: 100%;
+    }
+}
+/*End Hero Section*/
+
+/*Start Sound Section*/
+.sound-section{
+    background: #1B6392;
+    background-image: url("../imgs/sound-img.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover 40%;
+    padding: 125px 15px;
+}
+
+.sound-section .container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sound-content{
+    display: flex;
+    max-width: 488px;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.sound-content h2{
+    color: #FFF;
+    font-family: "Doppio One";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.sound-content p{
+    color: #FFF;
+    font-family: "Doppio One";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 750px) {
+    .sound-section{
+        background-image: none;
+    }
+
+    .sound-content{
+        width: 100%;
+    }
+}
+/*End Sound Section*/
+
+/*Start Product Section*/
+.product-section{
+    padding-top: 192px;
+    padding-bottom: 192px;
+}
+
+.product-heading {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 592px;
+    padding-bottom: 40px;
+}
+
+.product-heading h2{
+    color: #444;
+    font-family: "Doppio One";
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.product-heading p{
+    color: #8A8A8A;
+    font-family: "Doppio One";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 24px;
+}
+
+.item{
+    padding: 16px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    transition: all linear 0.3s;
+}
+
+.item:hover{
+    transform: translateY(3px);
+}
+
+.item-img{
+    border-radius: 8px;
+    border: #191C1F 1px solid;
+    overflow: hidden;
+    height: 288px;
+}
+
+.item-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.item-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.item-content h3{
+    color: #191C1F;
+    font-family: "Doppio One";
+    font-size: 24px;
+    font-style: normal;
+}
+
+.item-content span{
+    color: #FA8232;
+    font-family: "Doppio One";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .product-section .row .col-3{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .product-section .row .col-3{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 776px) {
+    .product-section .row .col-3{
+        width: 100%;
+    }
+}
+
+/*End Product Section*/
+
+/*Start Form Section*/
+.contact-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.form{
+    background: #1B6392;
+    padding: 16px 48px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.form h3{
+    color: #fff;
+    font-family: "Doppio One";
+    font-size: 32px;
+    font-weight: 400;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: start;
+}
+
+.labels-style{
+    color: white;
+    font-family: "Doppio One";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.input-style{
+    width: 100%;
+    height: 56px;
+    outline: none;
+    border: 1px solid white;
+    background-color: white;
+    color: #667580;
+    font-family: "Doppio One";
+    font-size: 16px;
+    font-weight: 400;
+    flex-grow: 1;
+    padding: 10px 16px;
+    border-radius: 2px;
+}
+
+.select-icon{
+    appearance: none;
+    position: relative;
+    width: 100%;
+}
+select.input-style::after{
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>');
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+textarea.input-style{
+    height: 142px;
+    resize: vertical;
+}
+
+.form-btn .input-style{
+    border-radius: 2px;
+    border: 1px solid #FF4C29;
+    background: #FF4C29;
+    font-family: "Doppio One";
+    font-size: 24x;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+}
+
+.form-img{
+    height: 100%;
+}
+
+.form-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 801px) {
+    .contact-section .row .col-6:first-child{
+        padding-right: 0;
+    }
+
+    .contact-section .row .col-6:last-child{
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contact-section .row .col-6{
+        width: 100%;
+    }
+
+    .form{
+        padding:16px;
+    }
+}
+/*End Form Section*/
+
+/*Start Footer*/
+footer{
+    padding: 40px 0;
+    background: #191C1F;
+    background-image: url("../imgs/footer-bk.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 64px;
+}
+
+.second-row{
+    display: flex;
+    gap: 64px;
+    flex-wrap: wrap;
+}
+
+.first-item-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 255px;
+}
+
+.ul-footer{
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+.first-item-footer p{
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.second-item-footer h4{
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    line-height: 30px;
+}
+
+.second-item-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    list-style: none;
+}
+
+.second-item-li a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 800px){
+    .first-item-footer{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .second-row{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 0;
+    }
+}
